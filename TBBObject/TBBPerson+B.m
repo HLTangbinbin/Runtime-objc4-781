@@ -1,13 +1,13 @@
 //
-//  TBBPerson.m
+//  TBBPerson+B.m
 //  TBBObject
 //
-//  Created by 唐彬彬 on 2020/12/17.
+//  Created by coooo on 2020/12/21.
 //
 
-#import "TBBPerson.h"
+#import "TBBPerson+B.h"
 
-@implementation TBBPerson
+@implementation TBBPerson (B)
 + (void)initialize
 {
     if (self == [self class]) {

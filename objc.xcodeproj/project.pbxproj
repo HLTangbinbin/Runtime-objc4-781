@@ -32,6 +32,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1C1F8F8F258CAB2400407A11 /* TBBMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F8F8E258CAB2400407A11 /* TBBMan.m */; };
+		1C1F90382590969300407A11 /* TBBPerson+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F90372590969300407A11 /* TBBPerson+A.m */; };
+		1C1F90402590969C00407A11 /* TBBPerson+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F903F2590969C00407A11 /* TBBPerson+B.m */; };
 		393CEAC00DC69E3E000B69DE /* objc-references.mm in Sources */ = {isa = PBXBuildFile; fileRef = 393CEABF0DC69E3E000B69DE /* objc-references.mm */; };
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
@@ -173,6 +176,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C1F8F8D258CAB2400407A11 /* TBBMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBBMan.h; sourceTree = "<group>"; };
+		1C1F8F8E258CAB2400407A11 /* TBBMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBBMan.m; sourceTree = "<group>"; };
+		1C1F90362590969300407A11 /* TBBPerson+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBBPerson+A.h"; sourceTree = "<group>"; };
+		1C1F90372590969300407A11 /* TBBPerson+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBBPerson+A.m"; sourceTree = "<group>"; };
+		1C1F903E2590969C00407A11 /* TBBPerson+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBBPerson+B.h"; sourceTree = "<group>"; };
+		1C1F903F2590969C00407A11 /* TBBPerson+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBBPerson+B.m"; sourceTree = "<group>"; };
 		393CEABF0DC69E3E000B69DE /* objc-references.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-references.mm"; path = "runtime/objc-references.mm"; sourceTree = "<group>"; };
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
@@ -499,6 +508,12 @@
 				C69D5FFA258B8D39007A2D93 /* main.m */,
 				C69D603E258B94AC007A2D93 /* TBBPerson.h */,
 				C69D603F258B94AC007A2D93 /* TBBPerson.m */,
+				1C1F90362590969300407A11 /* TBBPerson+A.h */,
+				1C1F90372590969300407A11 /* TBBPerson+A.m */,
+				1C1F903E2590969C00407A11 /* TBBPerson+B.h */,
+				1C1F903F2590969C00407A11 /* TBBPerson+B.m */,
+				1C1F8F8D258CAB2400407A11 /* TBBMan.h */,
+				1C1F8F8E258CAB2400407A11 /* TBBMan.m */,
 			);
 			path = TBBObject;
 			sourceTree = "<group>";
@@ -737,8 +752,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1F90402590969C00407A11 /* TBBPerson+B.m in Sources */,
 				C69D5FFB258B8D39007A2D93 /* main.m in Sources */,
+				1C1F8F8F258CAB2400407A11 /* TBBMan.m in Sources */,
 				C69D6040258B94AC007A2D93 /* TBBPerson.m in Sources */,
+				1C1F90382590969300407A11 /* TBBPerson+A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,7 +1182,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1215,7 +1233,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
