@@ -752,11 +752,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1F90382590969300407A11 /* TBBPerson+A.m in Sources */,
 				1C1F90402590969C00407A11 /* TBBPerson+B.m in Sources */,
 				C69D5FFB258B8D39007A2D93 /* main.m in Sources */,
 				1C1F8F8F258CAB2400407A11 /* TBBMan.m in Sources */,
 				C69D6040258B94AC007A2D93 /* TBBPerson.m in Sources */,
-				1C1F90382590969300407A11 /* TBBPerson+A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
