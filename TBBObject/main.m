@@ -6,8 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "objc-runtime.h"
 #import "TBBPerson.h"
 #import "TBBMan.h"
+#import "TBBClassA.h"
+#import "TBBClassB.h"
+
 typedef void (^Tbbblock)(void);
 //int a = 10;
 //static int b = 15;
@@ -41,18 +45,26 @@ int main(int argc, const char * argv[]) {
 //        b = 1;
 //        Block1();
 //        NSLog(@"block类型为%@",[Block1 class]);
+//
+//        int a = 10;
+//        static int b = 15;
+//        void (^Block2)(void) = ^{
+//            NSLog(@"局部变量：a的值为%d,b的值为%d",a,b);
+//        };
+//        a = 2;
+//        b = 2;
+//        Block2();
+//        NSLog(@"block类型为%@",[Block2 class]);
         
-        int a = 10;
-        static int b = 15;
-        void (^Block2)(void) = ^{
-            NSLog(@"局部变量：a的值为%d,b的值为%d",a,b);
-        };
-        a = 2;
-        b = 2;
-        Block2();
-        NSLog(@"block类型为%@",[Block2 class]);
+        //MARK：KVO底层原理探究
+        TBBClassA *objcA = [[TBBClassA alloc] init];
+        TBBClassB *objcB = [[TBBClassB alloc] init];
+        NSLog(@"ClassA被观察前:%@",objc_getClass("TBBClassA"));
+        NSLog(@"ClassA被观察前:%@",[objcA class]);
+        [objcA addObserver:objcB forKeyPath:@"age" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+        objcA.age = 10;
+        NSLog(@"ClassA被观察后:%@",objc_getClass("TBBClassA"));
+        NSLog(@"ClassA被观察后:%@",[objcA class]);
     }
     return 0;
-
 }
-
